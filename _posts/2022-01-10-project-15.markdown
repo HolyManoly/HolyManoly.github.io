@@ -1,0 +1,12 @@
+---
+layout: default
+title: Teaching Unity at university
+modal-id: 15
+date: 2022-01-10
+img: teaching_unity.png
+vid-id: Ga09HqmRlRc
+alt: image-alt
+project-date: Oct 2017
+description: This is a project I created for teaching a Unity workshop at a university. It starts of as a boring PowerPoint deck, and after a while, the deck falls down and students realize it's an FPS game. It has a building with an elevator, every floor representing a concept of Unity development. Loads of fun making this, the students enjoyed it as well. :) 
+---
+

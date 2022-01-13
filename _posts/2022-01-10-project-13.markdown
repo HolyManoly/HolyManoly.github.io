@@ -1,0 +1,12 @@
+---
+layout: default
+title: VR Races
+modal-id: 13
+date: 2022-01-10
+img: race.png
+vid-id: zAPaJ405wTQ
+alt: image-alt
+project-date: Sep 2020
+description: A fun little multiplayer prototype I created to test out a game idea. Players move on their own grids in order to reach a goal location, by pulling themselves towards the adjacent grid location. After creating a couple of different prototypes and movement schemas, I landed on this one, since it proved to be most predictable and caused the most amount of nausea for me :D. Players also have the option to block the other players grid spot by shooting it, making it unusable for some amount of time. Had a bunch of fun making it!
+---
+

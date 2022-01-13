@@ -1,0 +1,13 @@
+---
+layout: default
+title: Son of Perdition
+modal-id: 4
+date: 2022-01-10
+img: perdition.png
+vid-id: Ifs5uYf2Gag
+alt: image-alt
+project-date: July 2016
+description: A short little game for the StartIt Game Jam. We used a Leap Motion controller in order to move the player, as well as shoot at other cowboys.
+link: https://holymanoly.itch.io/son-of-pa
+link-name: Link to game
+---

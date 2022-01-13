@@ -1,0 +1,14 @@
+---
+layout: default
+title: S.L.U.R.P.
+modal-id: 7
+date: 2022-01-10
+img: slurp.jpg
+vid-id: MkYUJXLveVM
+alt: image-alt
+project-date: March 2019 - March 2021
+description: I helped bring this game to life with Seattle Indie Game Creatives, a group of game dev hobbyists that met through Meetup. We would gather on weekends in a small coffee shop, brainstorm and test out different quirky ideas, until getting one that sticked. Enter S.L.U.R.P., a quirky little mobile puzzle game that definitely had a bunch of interesting design challenges. I was in charge of the full initial Unity implementation, built up a WebGL level editor for the whole team to use, punching holes in game mechanic design and then brainstorm design ideas about how to patch those holes up, or take a completely different route. 
+link: https://apps.apple.com/app/id1559510436
+link-name: iTunes link
+---
+

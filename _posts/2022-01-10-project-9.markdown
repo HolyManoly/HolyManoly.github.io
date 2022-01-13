@@ -1,0 +1,12 @@
+---
+layout: default
+title: ALL YOU CAN EAT
+modal-id: 9
+date: 2022-01-10
+img: eating.jpg
+vid-id: UOEIHvZGcxs
+alt: image-alt
+project-date: Jan 2021
+description: Simple little prototype I made to test out if an eating mechanic would feel good in VR. Has multiplayer enabled, next steps would be to split controls so that player1 is controlling the left hand, player2 controlling the right one. 
+---
+

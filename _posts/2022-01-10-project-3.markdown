@@ -1,0 +1,11 @@
+---
+layout: default
+title: Black George
+modal-id: 3
+date: 2022-01-10
+img: george.png
+vid-id: xbmNfyIS-zY
+alt: image-alt
+project-date: July 2016
+description: Here's a fun little game my team made for the Nordeus Hackathon 2016. Created in 24 hours, using nothing but pizza and keyboards. 
+---

@@ -1,0 +1,11 @@
+---
+layout: default
+title: PufferFish
+modal-id: 1
+date: 2022-01-10
+img: petnica.jpg
+vid-id: cfK9ZMVnScE
+alt: image-alt
+project-date: July 2015
+description: This is a fun little game I made as a part of Petnica Machine Learning Summer Institute 2015. We trained a deep recurrent model to recognize human faces and if folks are puffing their cheecks or not. The "puff" signal was used in a 2D side-scroller similar to Flappy Bird, in order to control the players character.
+---

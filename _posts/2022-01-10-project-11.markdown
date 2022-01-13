@@ -1,0 +1,12 @@
+---
+layout: default
+title: VR Apartment
+modal-id: 11
+date: 2022-01-10
+img: apt.jpg
+vid-id: ZZGHivah2Lk
+alt: image-alt
+project-date: Aug 2020
+description: Having to redesign a physical space can be difficult, especially if you're not able to be physically present. That's the situation I found myself in before making this project. My old house was getting a redesign, and I wanted to get a sense of the new space before we hire contractors to do it. I asked my dad to send me the blueprint, and I made this prototype so we can share screen and walk through it together before deciding on the final design. 
+---
+

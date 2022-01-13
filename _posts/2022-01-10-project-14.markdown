@@ -1,0 +1,14 @@
+---
+layout: default
+title: LAUDA Interactive gallery
+modal-id: 14
+date: 2022-01-10
+img: lauda.png
+vid-id: nTBad6tLez0
+alt: image-alt
+project-date: Oct 2021
+description: This is a project I created for the needs of LAUDA, Unity workshop I founded in order to teach Unity to highschool students. The project is a gallery of games that students create, and can be accessed on our website https://lauda-edu.org/ as a WebGL build. I also created learning materials for the course, which are available on Github.
+link: https://github.com/HolyManoly/LAUDA_Loznica
+link-name: Link to teaching materials
+---
+

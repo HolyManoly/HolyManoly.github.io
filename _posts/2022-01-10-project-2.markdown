@@ -1,0 +1,11 @@
+---
+layout: default
+title: Postman Codes
+modal-id: 2
+date: 2022-01-10
+img: postman.png
+vid-id: P7yUH-d67fU
+alt: image-alt
+project-date: March 2018
+description: This is the last game I was a part of at SayDada Entertainment. I was in charge of game design, coding it up in Unity, asset production management, optimization for mobile, video production, publishing on iTunes, Amazon, GooglePlay and showcasing the game on conferences.
+---
