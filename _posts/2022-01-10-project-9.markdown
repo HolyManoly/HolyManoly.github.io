@@ -3,7 +3,7 @@ layout: default
 title: ALL YOU CAN EAT
 modal-id: 9
 date: 2022-01-10
-img: eating.jpg
+img: eating.png
 vid-id: UOEIHvZGcxs
 alt: image-alt
 project-date: Jan 2021

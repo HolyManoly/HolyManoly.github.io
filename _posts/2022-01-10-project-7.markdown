@@ -3,7 +3,7 @@ layout: default
 title: S.L.U.R.P.
 modal-id: 7
 date: 2022-01-10
-img: slurp.jpg
+img: slurp.png
 vid-id: MkYUJXLveVM
 alt: image-alt
 project-date: March 2019 - March 2021

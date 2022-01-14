@@ -3,7 +3,7 @@ layout: default
 title: Work at Digital Mind
 modal-id: 6
 date: 2022-01-10
-img: digitalmind.jpg
+img: digitalmind.png
 vid-id: D2yglTgscUw
 alt: image-alt
 project-date: Oct 2017 - Jul 2018

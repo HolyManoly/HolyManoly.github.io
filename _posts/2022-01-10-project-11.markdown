@@ -3,7 +3,7 @@ layout: default
 title: VR Apartment
 modal-id: 11
 date: 2022-01-10
-img: apt.jpg
+img: apt.png
 vid-id: ZZGHivah2Lk
 alt: image-alt
 project-date: Aug 2020
