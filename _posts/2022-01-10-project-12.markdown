@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VR Cops
+title: Copz, VR Prototype
 modal-id: 12
 date: 2022-01-10
 img: cops.png

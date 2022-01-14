@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Son of Perdition
+title: Son of Perdition, Asylum game jam 2016
 modal-id: 4
 date: 2022-01-10
 img: perdition.png

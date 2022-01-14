@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Microsoft Mixed Reality
+title: Microsoft Mixed Reality, Hololens team
 modal-id: 8
 date: 2022-01-10
 img: mesh-app.png

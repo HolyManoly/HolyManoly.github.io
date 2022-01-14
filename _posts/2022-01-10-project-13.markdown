@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VR Races
+title: GridRacer, VR Prototype
 modal-id: 13
 date: 2022-01-10
 img: race.png

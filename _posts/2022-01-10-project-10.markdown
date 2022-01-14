@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VRobbie
+title: Robbie, VR Prototype
 modal-id: 10
 date: 2022-01-10
 img: robbie.png

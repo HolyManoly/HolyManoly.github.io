@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Postman Codes
+title: Postman Codes, Educational Mobile App
 modal-id: 2
 date: 2022-01-10
 img: postman.png

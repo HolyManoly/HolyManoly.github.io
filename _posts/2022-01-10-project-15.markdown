@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Teaching Unity at university
+title: Teaching Unity at Novi Sad University
 modal-id: 15
 date: 2022-01-10
 img: teaching_unity.png
