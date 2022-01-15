@@ -1,0 +1,12 @@
+---
+layout: default
+title: Catapult VR Prototype
+modal-id: 16
+date: 2022-01-10
+img: tanks.png
+vid-id: IMXoas7NAKI
+alt: image-alt
+project-date: Jan 2021
+description: Wanted to learn about hand tracking on Oculus Quest devices. What better way to do it then to blow stuff up? :) The player can move around pinching with his left hand, pull down and fire the catapult pinching his right hand. KABOOM!
+---
+
