@@ -1,0 +1,11 @@
+---
+layout: default
+title: RecRoom
+modal-id: 0
+date: 2022-04-01
+img: recroom.png
+vid-id: Bcpxa6JQuVU
+alt: image-alt
+project-date: April 2022 - Present
+description: Working as an Experiences developer at this company has been nothing short of amazing. Started as VR only, but now radically cross-platform, we're constantly faced with new challenges when it comes to designing for usability and engagement. I've worked on various user-facing features, enjoying a tight iteration loop with designers across the company. 
+---
