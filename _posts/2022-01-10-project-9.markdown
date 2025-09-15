@@ -1,12 +1,12 @@
 ---
 layout: default
-title: All You Can Eat, VR Prototype
+title: AnatomyX, Medivis Inc.
 modal-id: 9
-date: 2022-01-10
-img: eating.png
-vid-id: UOEIHvZGcxs
+date: 2024-10-10
+img: anatomyx.png
+vid-id: _Wq5m-VKs1c
 alt: image-alt
-project-date: Jan 2021
-description: Simple little prototype I made to test out if an eating mechanic would feel good in VR. Has multiplayer enabled, next steps would be to split controls so that player1 is controlling the left hand, player2 controlling the right one. 
+project-date: Aug 2024
+description: AnatomyX is a XR app made to teach medical students about human anatomy. It supports multiplayer, colocated experiences using physical anchors, as well as custom anatomy lessons you can create in a web backend. I worked on porting the whole app from its Hololens1 version to use Oculus Quest, as well as updating MRTK from 2 to 3. Improved body part interactions and added magnetism for much better look and feel.
 ---
 

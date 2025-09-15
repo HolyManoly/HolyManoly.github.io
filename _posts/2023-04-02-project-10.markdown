@@ -1,0 +1,11 @@
+---
+layout: default
+title: Medivis Inc.
+modal-id: 10
+date: 2025-01-01
+img: medivis.png
+vid-id: mhXa13wIKTk
+alt: image-alt
+project-date: Dec 2024 - Sep 2025
+description: Owned all systems for spatial interaction. From manipulating and world-locking panels and the 3D volume, to laying them out and manipulating them through the 2D monitor. I added automatic spatial tool activation, built the remote devices system for external cameras and lastly, prototyped a system for multiple 3D views of the scene.
+---

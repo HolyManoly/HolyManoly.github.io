@@ -1,10 +1,10 @@
 ---
 layout: default
 title: OxfordVR
-modal-id: 1
+modal-id: 17
 date: 2021-08-01
 img: ovr.png
-vid-id: _17YjG8hGsM
+vid-id: OUHrBVrsXYY
 alt: image-alt
 project-date: Sep 2021 - Mar 2022
 description: On this project, I was working on developing an in-house facial animation capture system, updated all the NPCs in the experience as well as created a brand new UI system, packaged to be used in other OxfordVR application. 
