@@ -67,12 +67,13 @@ const lab = projects.filter((p) => p.data.kind === 'lab');
                 <h3>{p.data.title}</h3>
                 <p class="period">{p.data.period}</p>
                 <div set:html={p.rendered?.html} />
-                <p class="actions">
-                  <button type="button" data-open={p.id}>
-                    Watch video
-                  </button>
-                  {p.data.link && <a href={p.data.link}>{p.data.linkName ?? p.data.link}</a>}
-                </p>
+                {p.data.link && (
+                  <p>
+                    <a class="link" href={p.data.link}>
+                      {p.data.linkName ?? p.data.link}
+                    </a>
+                  </p>
+                )}
               </div>
             </li>
           ))
@@ -362,30 +363,7 @@ const lab = projects.filter((p) => p.data.kind === 'lab');
     margin: 0 0 1rem;
   }
 
-  .actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.75rem 1.5rem;
-  }
-
-  .actions button {
-    font: 700 0.875rem Montserrat, system-ui, sans-serif;
-    text-transform: uppercase;
-    padding: 0.625rem 1.25rem;
-    border: 2px solid var(--secondary);
-    border-radius: 6px;
-    background: none;
-    color: var(--secondary);
-    cursor: pointer;
-  }
-
-  .actions button:hover {
-    background: var(--secondary);
-    color: #fff;
-  }
-
-  .actions a {
+  .link {
     font-weight: 700;
     color: var(--secondary);
   }
