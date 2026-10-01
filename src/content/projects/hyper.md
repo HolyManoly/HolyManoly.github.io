@@ -1,5 +1,6 @@
 ---
 title: "StartIt Hyper Reality Hackathon"
+kind: lab
 start: 2018-02
 period: "February 2018"
 image: ../../assets/projects/hyper.png

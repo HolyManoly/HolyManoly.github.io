@@ -7,7 +7,9 @@ const projects = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      // YYYY-MM the project started; sorts the grid newest first.
+      // work: feature row under "Selected work". lab: card in the Lab grid.
+      kind: z.enum(['work', 'lab']),
+      // YYYY-MM the project started; sorts each section newest first.
       start: z.string().regex(/^\d{4}-\d{2}$/),
       period: z.string(),
       image: image(),

@@ -1,5 +1,6 @@
 ---
 title: "AnatomyX, Medivis Inc."
+kind: work
 start: 2024-08
 period: "Aug 2024"
 image: ../../assets/projects/anatomyx.png

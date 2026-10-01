@@ -1,5 +1,6 @@
 ---
 title: "PufferFish Computer Vision controls"
+kind: lab
 start: 2015-07
 period: "July 2015"
 image: ../../assets/projects/petnica.png

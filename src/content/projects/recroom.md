@@ -1,7 +1,8 @@
 ---
-title: "RecRoom"
+title: "Rec Room"
+kind: work
 start: 2022-04
-period: "April 2022 - Present"
+period: "Apr 2022 - 2024"
 image: ../../assets/projects/recroom.png
 video: "Bcpxa6JQuVU"
 ---

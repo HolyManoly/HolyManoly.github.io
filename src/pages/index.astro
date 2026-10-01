@@ -5,7 +5,8 @@ import Base from '../layouts/Base.astro';
 import profile from '../assets/profile.png';
 
 const name = 'Aleksandar Josic';
-const tagline = 'AR/VR Development - Unity/C#';
+const role = 'Senior UX Engineer at Google';
+const previously = ['Medivis', 'Rec Room', 'OxfordVR', 'Microsoft'];
 const formspree = 'https://formspree.io/xayvqnaa';
 const social = [
   {
@@ -23,14 +24,17 @@ const social = [
 const projects = (await getCollection('projects')).sort((a, b) =>
   b.data.start.localeCompare(a.data.start),
 );
+const work = projects.filter((p) => p.data.kind === 'work');
+const lab = projects.filter((p) => p.data.kind === 'lab');
 ---
 
-<Base title={name} description={`${name} Portfolio`}>
+<Base title={name} description={`${name}, ${role}. A decade of XR engineering, now applied to UX.`}>
   <nav>
     <div class="container">
       <a class="brand" href="#top">{name}</a>
       <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#lab">Lab</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -41,17 +45,49 @@ const projects = (await getCollection('projects')).sort((a, b) =>
     <div class="container">
       <Image src={profile} alt={name} width={256} height={256} class="profile" loading="eager" />
       <h1>{name}</h1>
+      <p class="role">{role}</p>
       <hr />
-      <p class="tagline">{tagline}</p>
+      <p class="thesis">I design and build interfaces you can reach into: a decade of XR engineering, now applied to UX.</p>
+      <p class="previously">Previously {previously.join(' · ')}</p>
     </div>
   </header>
 
-  <section id="portfolio">
+  <section id="work">
     <div class="container">
-      <h2>Portfolio</h2>
+      <h2>Selected work</h2>
+      <ol class="features">
+        {
+          work.map((p) => (
+            <li class="feature">
+              <button type="button" class="media" data-open={p.id} aria-label={`Watch ${p.data.title} video`}>
+                <Image src={p.data.image} alt="" widths={[560, 1120]} sizes="(min-width: 900px) 560px, 100vw" />
+                <span class="play" aria-hidden="true" />
+              </button>
+              <div class="body">
+                <h3>{p.data.title}</h3>
+                <p class="period">{p.data.period}</p>
+                <div set:html={p.rendered?.html} />
+                <p class="actions">
+                  <button type="button" data-open={p.id}>
+                    Watch video
+                  </button>
+                  {p.data.link && <a href={p.data.link}>{p.data.linkName ?? p.data.link}</a>}
+                </p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section id="lab">
+    <div class="container">
+      <h2>Lab</h2>
+      <p class="intro">Game jams, hackathons, teaching and prototypes.</p>
       <ul class="grid">
         {
-          projects.map((p) => (
+          lab.map((p) => (
             <li>
               <button type="button" class="card" data-open={p.id}>
                 <Image src={p.data.image} alt="" widths={[360, 720]} sizes="(min-width: 768px) 360px, 100vw" />
@@ -68,10 +104,11 @@ const projects = (await getCollection('projects')).sort((a, b) =>
     <div class="container">
       <h2>About</h2>
       <p class="prose">
-        Masters in Electrical and Computer engineering, with emphasis on Game Development and Human-Computer interaction.
-        12 years of Unity experience, 8 years of experience with immersive technologies. I enjoy working on
-        cross-functional teams, pushing the limits of what it means for people to interact with machines as well as each
-        other.
+        Master's in Electrical and Computer Engineering, with an emphasis on game development and human-computer
+        interaction. I spent a decade building XR: HoloLens apps at Microsoft, therapeutic VR at OxfordVR,
+        cross-platform social play at Rec Room and spatial interaction for surgeons at Medivis. Today I'm a Senior UX
+        Engineer at Google. I enjoy working on cross-functional teams, pushing the limits of what it means for people to
+        interact with machines as well as each other.
       </p>
     </div>
   </section>
@@ -124,7 +161,8 @@ const projects = (await getCollection('projects')).sort((a, b) =>
             allowfullscreen
           />
         </div>
-        <div class="prose" set:html={p.rendered?.html} />
+        {/* Work rows already show the text beside the thumbnail. */}
+        {p.data.kind === 'lab' && <div class="prose" set:html={p.rendered?.html} />}
         <p class="meta">
           {p.data.link && <a href={p.data.link}>{p.data.linkName ?? p.data.link}</a>}
           <span>Date: {p.data.period}</span>
@@ -137,15 +175,17 @@ const projects = (await getCollection('projects')).sort((a, b) =>
 <script>
   // The iframe only gets its src while its dialog is open: keeps 15 YouTube
   // embeds off the initial load and stops playback on close.
-  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-open]')) {
+  document.addEventListener('click', (e) => {
+    const button = (e.target as HTMLElement).closest<HTMLElement>('[data-open]');
+    if (!button) return;
     const dialog = document.getElementById(`project-${button.dataset.open}`) as HTMLDialogElement;
     const iframe = dialog.querySelector('iframe')!;
+    iframe.src = iframe.dataset.src!;
+    dialog.showModal();
+  });
 
-    button.addEventListener('click', () => {
-      iframe.src = iframe.dataset.src!;
-      dialog.showModal();
-    });
-    dialog.addEventListener('close', () => iframe.removeAttribute('src'));
+  for (const dialog of document.querySelectorAll('dialog')) {
+    dialog.addEventListener('close', () => dialog.querySelector('iframe')!.removeAttribute('src'));
     dialog.addEventListener('click', (e) => {
       if (e.target === dialog || (e.target as HTMLElement).closest('[data-close]')) dialog.close();
     });
@@ -219,9 +259,144 @@ const projects = (await getCollection('projects')).sort((a, b) =>
     border-top: 4px solid #fff;
   }
 
-  .tagline {
-    font-size: 1.5rem;
+  .role {
+    font: 700 1.25rem Montserrat, system-ui, sans-serif;
+    margin: 0.75rem 0 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .thesis {
+    font-size: clamp(1.25rem, 3vw, 1.625rem);
+    max-width: 34ch;
+    margin: 0 auto;
+  }
+
+  .previously {
+    margin: 1.25rem 0 0;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.8;
+  }
+
+  .features {
+    display: grid;
+    gap: 4rem;
     margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+    gap: 1.5rem 3rem;
+    align-items: center;
+  }
+
+  .feature:nth-child(even) .media {
+    order: 1;
+  }
+
+  .media {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--secondary);
+  }
+
+  .media img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .media:hover img,
+  .media:focus-visible img {
+    transform: scale(1.03);
+  }
+
+  .play {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: rgb(38 37 38 / 0.8);
+  }
+
+  .play::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    transform: translateX(3px);
+    border-style: solid;
+    border-width: 0.75rem 0 0.75rem 1.25rem;
+    border-color: transparent transparent transparent #fff;
+  }
+
+  .feature h3 {
+    font-size: 1.5rem;
+  }
+
+  .period {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--primary);
+  }
+
+  .feature .body :global(p) {
+    margin: 0 0 1rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1.5rem;
+  }
+
+  .actions button {
+    font: 700 0.875rem Montserrat, system-ui, sans-serif;
+    text-transform: uppercase;
+    padding: 0.625rem 1.25rem;
+    border: 2px solid var(--secondary);
+    border-radius: 6px;
+    background: none;
+    color: var(--secondary);
+    cursor: pointer;
+  }
+
+  .actions button:hover {
+    background: var(--secondary);
+    color: #fff;
+  }
+
+  .actions a {
+    font-weight: 700;
+    color: var(--secondary);
+  }
+
+  #lab {
+    background: #f3f3f4;
+  }
+
+  .intro {
+    text-align: center;
+    margin: -1.5rem 0 2.5rem;
   }
 
   .grid {

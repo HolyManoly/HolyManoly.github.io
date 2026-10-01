@@ -1,5 +1,6 @@
 ---
 title: "OxfordVR"
+kind: work
 start: 2021-09
 period: "Sep 2021 - Mar 2022"
 image: ../../assets/projects/ovr.png

@@ -1,5 +1,6 @@
 ---
-title: "Microsoft Mixed Reality, Hololens team"
+title: "Microsoft Mixed Reality, HoloLens team"
+kind: work
 start: 2020-04
 period: "Apr 2020 - Sep 2021"
 image: ../../assets/projects/mesh-app.png

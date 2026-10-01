@@ -1,5 +1,6 @@
 ---
 title: "Postman Codes, Educational Mobile App"
+kind: work
 start: 2018-03
 period: "March 2018"
 image: ../../assets/projects/postman.png

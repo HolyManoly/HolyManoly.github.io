@@ -1,5 +1,6 @@
 ---
 title: "Son of Perdition, Asylum game jam 2016"
+kind: lab
 start: 2016-07
 period: "July 2016"
 image: ../../assets/projects/perdition.png

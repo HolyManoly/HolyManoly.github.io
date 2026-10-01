@@ -1,5 +1,6 @@
 ---
 title: "Medivis Inc."
+kind: work
 start: 2024-12
 period: "Dec 2024 - Sep 2025"
 image: ../../assets/projects/medivis.png

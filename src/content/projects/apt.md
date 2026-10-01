@@ -1,5 +1,6 @@
 ---
 title: "Apartment redesign, VR Prototype"
+kind: lab
 start: 2020-08
 period: "Aug 2020"
 image: ../../assets/projects/apt.png

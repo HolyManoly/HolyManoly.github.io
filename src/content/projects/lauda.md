@@ -1,5 +1,6 @@
 ---
 title: "LAUDA Interactive gallery"
+kind: lab
 start: 2021-10
 period: "Oct 2021"
 image: ../../assets/projects/lauda.png

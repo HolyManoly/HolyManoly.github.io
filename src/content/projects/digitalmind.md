@@ -1,5 +1,6 @@
 ---
-title: "Work at Digital Mind"
+title: "Digital Mind"
+kind: work
 start: 2017-10
 period: "Oct 2017 - Jul 2018"
 image: ../../assets/projects/digitalmind.png

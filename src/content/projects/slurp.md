@@ -1,5 +1,6 @@
 ---
 title: "S.L.U.R.P. Mobile Puzzle Game"
+kind: lab
 start: 2019-03
 period: "March 2019 - March 2021"
 image: ../../assets/projects/slurp.png

@@ -1,5 +1,6 @@
 ---
 title: "Teaching Unity at Novi Sad University"
+kind: lab
 start: 2017-10
 period: "Oct 2017"
 image: ../../assets/projects/teaching_unity.png
