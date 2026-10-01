@@ -1,0 +1,103 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={title} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --primary: #7f8084;
+    --secondary: #262526;
+    --accent: #8ebf42;
+    --text: #2c3e50;
+    --max: 1140px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+  }
+
+  body {
+    margin: 0;
+    font-family: Lato, system-ui, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text);
+    background: #fff;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Montserrat, system-ui, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .container {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  section > .container > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  section > .container > h2::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    max-width: 60%;
+    margin: 1.5rem auto 3rem;
+    border-top: 4px solid currentColor;
+  }
+</style>

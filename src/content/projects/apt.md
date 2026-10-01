@@ -1,0 +1,9 @@
+---
+title: "Apartment redesign, VR Prototype"
+start: 2020-08
+period: "Aug 2020"
+image: ../../assets/projects/apt.png
+video: "ZZGHivah2Lk"
+---
+
+Having to redesign a physical space can be difficult, especially if you're not able to be physically present. That's the situation I found myself in before making this project. My old house was getting a redesign, and I wanted to get a sense of the new space before we hire contractors to do it. I asked my dad to send me the blueprint, and I made this prototype so we can share screen and walk through it together before deciding on the final design.
